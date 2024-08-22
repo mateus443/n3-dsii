@@ -23,3 +23,4 @@
 ### Criação do Primeiro Projeto Web:
  - Estrutura básica de um projeto web: criação de arquivos HTML, CSS, e JavaScript.
  - Utilização do Live Server para visualização em tempo real
+ 
