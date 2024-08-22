@@ -1,0 +1,35 @@
+my-web-project/
+│
+├── index.html
+├── style.css
+├── script.js
+│
+├── assets/
+│   ├── images/
+│   │   ├── logo.png
+│   │   ├── background.jpg
+│   │   └── ...
+│   ├── fonts/
+│   │   ├── custom-font.woff
+│   │   └── ...
+│   └── videos/
+│       ├── intro.mp4
+│       └── ...
+│
+├── css/
+│   ├── main.css
+│   ├── responsive.css
+│   └── ...
+│
+├── js/
+│   ├── app.js
+│   ├── helpers.js
+│   └── ...
+│
+├── vendor/
+│   ├── bootstrap/
+│   ├── jquery/
+│   └── ...
+│
+├── README.md
+└── .gitignore
