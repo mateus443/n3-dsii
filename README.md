@@ -1,2 +1,2 @@
 # DSI
-Desenvolvimento de Sistemas para a Internet
+Aulas da disciplina de Desenvolvimento de Sistemas para a Internet
