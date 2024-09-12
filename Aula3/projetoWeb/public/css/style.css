@@ -63,4 +63,13 @@ footer {
     }
 }
 
+
+/* Adicionar estilos personalizados para imagens */
+img {
+    max-width: 100%; /* A imagem nunca será maior que o container */
+    height: auto;    /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+    margin-top: 20px;
+}
+
 /* Alunos: podem adicionar estilos adicionais conforme necessário */
