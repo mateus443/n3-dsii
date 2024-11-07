@@ -28,7 +28,7 @@ Siga os passos abaixo para configurar e executar o projeto:
 #### Clone o Repositório
 
 ```bash
-git clone https://github.com/brunamichellyos/DSI/tree/main/Aula7
+git clone https://github.com/brunamichellyos/DSI/tree/main/Aula8
 cd nome-do-repositorio
 ```
 
