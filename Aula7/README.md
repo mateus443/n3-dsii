@@ -13,8 +13,7 @@ Este projeto demonstra o uso do Sequelize como ORM para gerenciar um banco de da
 Aula7/
 ├── database.js          # Configuração do banco de dados Sequelize com SQLite
 ├── index.js             # Código principal que sincroniza o banco e executa operações CRUD
-├── models/
-│   └── User.js          # Modelo Sequelize para a tabela de usuários
+├── user.js              # Modelo Sequelize para a tabela de usuários
 ├── database.sqlite      # Arquivo do banco de dados SQLite (gerado automaticamente)
 └── README.md            # Documentação do projeto
 
@@ -29,7 +28,7 @@ Siga os passos abaixo para configurar e executar o projeto:
 #### Clone o Repositório
 
 ```bash
-git clone linkRepositorio
+git clone https://github.com/brunamichellyos/DSI/tree/main/Aula7
 cd nome-do-repositorio
 ```
 
