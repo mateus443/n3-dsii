@@ -73,6 +73,8 @@ node server.js
 
 O servidor rodará na porta 3000. Abra o navegador e acesse: http://localhost:3000
 
+
+
 #### Passo 4: Personalização do Projeto
 
 Alunos podem adicionar o conteúdo nas seções e personalizar o código conforme o tema específico de cada grupo. Utilize o *style.css* para adicionar estilos personalizados e *script.js* para lógica interativa.
