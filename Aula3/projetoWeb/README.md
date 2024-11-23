@@ -75,7 +75,7 @@ O servidor rodará na porta 3000. Abra o navegador e acesse: http://localhost:30
 
 Abaixo, segue o modelo da tela inicial que deve aparecer ao acessar o navegador.
 
-![Tela Inicial Projeto Web](Aula3/projetoWeb/TelaInicialProjetoWeb.png)
+![Tela Inicial Projeto Web](https://github.com/brunamichellyos/DSI/blob/main/Aula3/projetoWeb/TelaInicialProjetoWeb.png)
 
 #### Passo 4: Personalização do Projeto
 
