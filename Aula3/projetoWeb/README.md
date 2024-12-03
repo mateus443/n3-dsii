@@ -1,82 +1,104 @@
-# Projeto Web Responsivo com Bootstrap
+# Projeto Web - Aula 3
 
-Este projeto web é parte de uma atividade acadêmica em que cada grupo de alunos deve desenvolver um tema específico utilizando HTML, CSS e JavaScript. O projeto inclui a integração com Bootstrap para criar uma interface responsiva, com navegação dinâmica e janelas modais. O servidor é gerido pelo Node.js e Express.js.
+## Descrição do Projeto
 
-### Estrutura do Projeto
+Este projeto consiste em um servidor web simples criado com Node.js e Express. O objetivo do projeto é desenvolver uma aplicação web básica, utilizando interatividade e novas funcionalidades através de JavaScript e IA, ampliando o projeto com novas interações e funcionalidades.
 
- - HTML: Estrutura semântica e conteúdo das páginas.
- - CSS: Estilização avançada utilizando Flexbox e Grid, além da integração com o Bootstrap para componentes de UI.
- - JavaScript: Lógica de interatividade, manipulação do DOM e integração com o Bootstrap para funcionalidades dinâmicas.
+### Novas Funcionalidades Adicionadas
 
-### Padrões de Arquitetura
+1. **Servidor Web com Express**: Implementação de um servidor web utilizando Express.js, que serve arquivos estáticos da pasta `public` e responde a requisições para a página principal com o arquivo `index.html`.
+2. **Interatividade Básica**: A aplicação web agora permite interação básica com o usuário, gerenciando requisições HTTP e exibindo respostas dinâmicas no navegador.
+3. **Inclusão de IA no Projeto**: A IA foi utilizada para gerar códigos, otimizar interações e aplicar funcionalidades que melhoraram a experiência do usuário e a usabilidade do sistema.
 
-O projeto segue uma arquitetura organizada em:
+## Prompts Usados e Explicações
 
- - HTML para a estruturação do conteúdo.
- - CSS para estilização e responsividade.
- - JavaScript para lógica e interatividade.
- - Node.js com Express.js para rodar um servidor local.
+Durante o desenvolvimento do projeto, utilizamos a IA para gerar as configurações e códigos de diferentes partes do sistema. Abaixo estão os prompts utilizados e uma breve explicação de cada um:
 
-### Ferramentas e Tecnologias Utilizadas
+1. **Prompt para ajustar o `server.js`**:  
+   *Objetivo*: Gerar um código de servidor Express que serve arquivos estáticos e responde com `index.html`.
+   *Explicação*: Esse prompt foi usado para criar a base do servidor web, utilizando as boas práticas de organização de código no Express.
+   
+   **Código gerado**:
 
- - Bootstrap para componentes de UI responsivos.
- - Flexbox e Grid para layout flexível e responsivo.
- - Node.js com Express.js para gerenciamento do servidor.
- - GitHub Pages para deploy contínuo (se necessário).
+   ```javascript
+   const express = require('express');
+   const path = require('path');
 
-### Estrutura de Pastas
+   const app = express();
+   const PORT = process.env.PORT || 3000;
 
-```bash
-/projetoWeb
-│
-├── /public      # Pasta para arquivos estáticos
-│   ├── /css     # Estilos CSS
-│   │   └── style.css
-│   ├── /js      # Arquivos JavaScript
-│   │   └── script.js
-│   └── /img     # Imagens do projeto
-│       └── (colocar imagens do projeto aqui)
-├── index.html   # Arquivo HTML principal
-├── server.js    # Servidor Node.js
-├── package.json # Dependências do projeto
-└── README.md    # Instruções do projeto
-```
+   app.use(express.static(path.join(__dirname, 'public')));
 
-### Instalação e Execução do Projeto
+   app.get('/', (req, res) => {
+       res.sendFile(path.join(__dirname, 'index.html'));
+   });
 
-Siga os passos abaixo para instalar e rodar o projeto *localmente*.
+   app.listen(PORT, () => {
+       console.log(`Servidor rodando em http://localhost:${PORT}`);
+   });
+Prompt para gerar o package.json:
+Objetivo: Criar um arquivo package.json básico com a dependência do Express. Explicação: Esse prompt foi utilizado para criar a estrutura inicial do package.json com a dependência do Express.
 
-#### Passo 1: Clonar o Repositório
+Código gerado:
 
-Clone o repositório para o seu ambiente local:
+json
+Copiar código
+{
+  "dependencies": {
+    "express": "^4.21.0"
+  }
+}
+Capturas de Tela
+Aqui estão algumas capturas de tela do site com as novas funcionalidades implementadas:
 
-```bash
-git clone https://github.com/seu-usuario/seu-projeto.git
-```
+Figura 1: Página inicial do projeto.
 
-#### Passo 2: Instalar Dependências
+Figura 2: Servidor em execução no terminal.
 
-Entre no diretório do projeto e instale as dependências do Node.js:
+Como Rodar o Projeto
+Clone o repositório:
 
-```bash
+bash
+Copiar código
+git clone <URL_DO_REPOSITÓRIO>
+Navegue até a pasta do projeto:
+
+bash
+Copiar código
 cd projetoWeb
-npm install express
-```
+Instale as dependências:
 
-#### Passo 3: Executar o Servidor
+bash
+Copiar código
+npm install
+Inicie o servidor:
 
-Após a instalação das dependências, inicie o servidor local:
+bash
+Copiar código
+npm start
+Acesse a aplicação no navegador em http://localhost:3000.
 
-```bash
-node server.js
-```
+Licença
+Este projeto está licenciado sob a MIT License.
 
-O servidor rodará na porta 3000. Abra o navegador e acesse: http://localhost:3000
+markdown
+Copiar código
 
-Abaixo, segue o modelo da tela inicial que deve aparecer ao acessar o navegador.
+### Explicações:
 
-![Tela Inicial Projeto Web](https://github.com/brunamichellyos/DSI/blob/main/Aula3/projetoWeb/TelaInicialProjetoWeb.png)
+- **Novas Funcionalidades Adicionadas**: Aqui, você descreve as funcionalidades implementadas no seu projeto (como o servidor Express, interatividade e uso de IA).
+- **Lista de Prompts Usados e Explicações**: Fornece uma lista detalhada dos prompts utilizados para gerar o código, explicando o propósito e o código gerado.
+- **Capturas de Tela**: Você deve substituir `./screenshots/homepage.png` e `./screenshots/server.png` pelos caminhos reais das imagens. Para adicionar imagens ao seu repositório, você pode criar uma pasta chamada `screenshots` e adicionar as imagens lá.
 
-#### Passo 4: Personalização do Projeto
+### Como adicionar capturas de tela:
 
-Alunos podem adicionar o conteúdo nas seções e personalizar o código conforme o tema específico de cada grupo. Utilize o *style.css* para adicionar estilos personalizados e *script.js* para lógica interativa.
+1. Crie uma pasta chamada `screenshots` no seu projeto.
+2. Coloque as imagens lá.
+3. Use a sintaxe `![Descrição da Imagem](caminho/para/imagem)` no Markdown para exibi-las.
+
+
+
+
+
+
+
